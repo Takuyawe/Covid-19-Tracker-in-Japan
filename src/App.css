@@ -1,0 +1,115 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("image/back.jpeg") center / cover no-repeat;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.input {
+  display: flex;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.input > input {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.error {
+  font-size: 1.75rem;
+  color: red;
+}
+
+/* yet & show search */
+
+.prefecture__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  background-color: rgb(185, 185, 185);
+  border-radius: 10px;
+  border: 5px solid black;
+  margin-top: 2rem;
+}
+
+.prefecture__container > h3 {
+  font-size: 3rem;
+  color: rgb(253, 253, 253);
+}
+
+.no__data__container {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.data__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.data__each {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.data__each > p {
+  padding-right: 7rem;
+}
+
+.active {
+  color: blue;
+}
+
+.data__each .confirmed {
+  color: green;
+  padding-right: 4.5rem;
+}
+
+.data__each .recovered {
+  color: yellow;
+  padding-right: 4.5rem;
+}
+
+.deaths {
+  color: red;
+}
+
+.number {
+  color: black;
+}
+
+.dot {
+  position: absolute;
+  right: 0;
+  left: 0;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  .prefecture__container {
+    width: 80%;
+  }
+}
